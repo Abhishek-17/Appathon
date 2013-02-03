@@ -70,7 +70,7 @@ if(isset($_GET["op"])){
 //The thank you page
    elseif ( $_GET["op"] == "thanks" )
   {
-  echo "<center class=\"margin\"><h1><u>DB_mozilla</u></h1><h2>Thanks for registering!</h2>";
+  echo "<center class=\"margin\"><h1><u>Easy Sharing..</u></h1><h2>Thanks for registering!</h2>";
   //echo "<a href=\"login.php\" class=\"link-style\" style=\"background-color:green\">GO back to login page</a></center>";
   }
   }
