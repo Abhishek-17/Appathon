@@ -1,5 +1,18 @@
+<style>
+{ margin: 0; padding:0;}
+html {
+		background: url(3.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+</style>
 <?php
+session_start();
+session_unset();
 
+session_destroy();
   $con = mysql_connect("localhost","root","");
 if (!$con)
   {
@@ -58,15 +71,14 @@ if(isset($_GET["op"])){
    elseif ( $_GET["op"] == "thanks" )
   {
   echo "<center class=\"margin\"><h1><u>DB_mozilla</u></h1><h2>Thanks for registering!</h2>";
-  echo "<a href=\"login.php\" class=\"link-style\" style=\"background-color:green\">GO back to login page</a></center>";
+  //echo "<a href=\"login.php\" class=\"link-style\" style=\"background-color:green\">GO back to login page</a></center>";
   }
   }
 //The web form for input ability
         else
   {
-  echo "<center ><h1><u>Misc share</u></h1><br/>
-		<label for=\"file\">Filename:</label><br/>
-		<input type=\"file\" name=\"file\" id=\"file\"><br/>";
+  echo "<center ><h1><u>Easy Sharing..</u></h1><br/>
+	";
   echo "<form action=\"register.php?op=reg\" method=\"POST\">\n";
   echo "Username: <input name=\"username\" MAXLENGTH=\"16\"><br />\n";
   echo "Password: &nbsp;<input type=\"password\" name=\"password\" MAXLENGTH=\"16\"><br />\n";
@@ -88,5 +100,5 @@ function myFunc2(){ window.location = "view.php?relation=persons&operation=view"
 </script>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <center class="margin">
-<h1><u>DB_Coaching</u></h1>
-<p ><a href="index.php"  class="link-style">check</a></p>
+
+<p ><a href="login.php"  class="link-style">Back to login..</a></p>

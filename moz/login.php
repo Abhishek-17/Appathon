@@ -64,7 +64,7 @@ else {
 //If all went right the Web form appears and users can log in
  // echo "<p style=\"text-align:right\"><a href=\"register.php\" class=\"link-style\" style=\"background-color:green\">Register</a></p>";
 	//echo "<div id=\"login-box\">";
-  echo "<div id=\"login-box\" class=\"margin\"><h1><u>DB_Coaching</u></h1><h3>Login</h3>";
+  echo "<div id=\"login-box\" class=\"margin\"><h1><u>Easy Sharing..</u></h1><h3>Login</h3>";
   
   echo "<form action=\"\" method=\"POST\">";
   echo "<input name=\"op\"  type=\"hidden\" value=\"login\">";
@@ -74,9 +74,11 @@ else {
   echo "</form>";
  // echo "</br><a href=\"register.php\" class=\"link-style\">Register</a>";
  // echo "</center>";
+ echo"<p >Not a member yet? : <a href=\"register.php\"  class=\"link-style\">Register.</a></p>";
   echo "</div>";
   }
   
         
 		?>
+		
 <link href="login-box.css" rel="stylesheet" type="text/css" />

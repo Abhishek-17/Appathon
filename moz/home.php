@@ -29,6 +29,16 @@ function myFunc2(){ window.location = "view.php?relation=persons&operation=view"
 <center class="margin">
 <h1><u>Easy Sharing..</u></h1>
 <br/>
+<a onclick="showme('create');" href="#"><input class="button" type="button" name="Insert Data" value="Create New Group" /></a><br/>
+<div id="create" style="display:none;">
+<form action="create.php" method="POST" >
+Group name: <input type="text" name="groupname" MAXLENGTH="100"><br/>
+Password for group: <input type="password" name="password" MAXLENGTH="100"><br/>
+Description: <input type="text" name="description" MAXLENGTH="200"><br/>
+<input type="submit" value="Create New Group" >
+<br/>
+</form>
+</div>
 <a onclick="showme('gr1');" href="#"><input class="button" type="button" name="Insert Data" value="My Groups" /></a>
 <div id="gr1" style="display:none;">
 
@@ -77,7 +87,7 @@ if ( ! ($r = mysql_query($q) ))
 while($row = mysql_fetch_array($r))
   {
 	//mysql_fetch_array(
-	if($i%2==0){echo "<input  type=\"button\" onclick=\"showme('$i');\" class=\"link-style\" value=\"".$row[0]."\"><br/></td><br/>
+	if(1){echo "<input  type=\"button\" onclick=\"showme('$i');\" class=\"link-style\" value=\"".$row[0]."\"><br/></td><br/>
 			<div id=".$i." style=\"display:none;\"><form action=\"files.php\" method=\"GET\">Password: <input type=\"password\" name=\"password\"> 
 					<input type=\"hidden\" name=\"group\" value=\"".$row[0]."\">
 				  <input type=\"submit\" value=\"Go to Group\" class=\"link-style\">

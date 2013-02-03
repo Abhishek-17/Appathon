@@ -1,0 +1,13 @@
+{
+  "name": "Easy sharing..",
+  "description": "Share files with friends",
+  "launch_path": "\app\login.php",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Easy sharing..",
+    "url": "shubham.upadhaya@students.iiit.ac.in"
+  },
+  "default_locale": "en"
+}
