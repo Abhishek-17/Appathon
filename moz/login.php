@@ -8,7 +8,7 @@ html {
 		background-size: cover;
 }
 </style>
-
+<link href="style2.css" rel="stylesheet" type="text/css" />
 <?php
 //echo "<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">";
 session_start();
@@ -47,7 +47,7 @@ else {
 		$_SESSION["valid_time"] = time();
 		Header("Location: home.php");
 	}
-	else {echo $_POST[password];}
+	else {echo "WRONG PASSWORD <br/> <a href=\"login.php\"  class=\"link-style9\">Login Page</a>"; }
 }
 
 // Redirect to member page
@@ -74,7 +74,7 @@ else {
   echo "</form>";
  // echo "</br><a href=\"register.php\" class=\"link-style\">Register</a>";
  // echo "</center>";
- echo"<p >Not a member yet? : <a href=\"register.php\"  class=\"link-style\">Register.</a></p>";
+ echo"<p >Not a member yet? : <a href=\"register.php\"  class=\"link-style9\">Register.</a></p>";
   echo "</div>";
   }
   
